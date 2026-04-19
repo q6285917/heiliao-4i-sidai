@@ -2,14 +2,24 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>回忆里是我的那个黑料已打烊（四爱版/GB/4i）- 官方资源导航</title>
     <meta name="description" content="欢迎访问黑料已打烊四爱版(GB/4i)专属资源导航站。本站专注女攻男受亚文化视频解析，提供TG进群完整版内容。">
     <meta name="keywords" content="黑料已打烊, 四爱版, GB, 4i, 女攻男受, 资源在线看">
-    <!-- 必应验证码保留 -->
+    
+    <!-- 1. 必选验证码 -->
     <meta name="msvalidate.01" content="5D959F59C715A0F15C3FCD245B35DC57" />
     <meta name="google-site-verification" content="EyuIK9WgmcC5aWjQ7AeBm_emCYlWQ0_LEcu_hxhtXkU" />
+
+    <!-- 2. Twitter Card 协议：让链接在 X 上显示为漂亮的大图卡片 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="回忆里是我的那个黑料已打烊（四爱版）">
+    <meta name="twitter:description" content="1080P高清更新，双龙/拳交/炸精。点击进入官方导航站。">
+    <!-- 建议把下面这个链接换成你的一张视频截图，效果最猛 -->
+    <meta name="twitter:image" content="https://v.gofarme66.ccwu.cc/vidd1122.jpg">
+
     <style>
-        body { font-family: sans-serif; background: #000; color: #fff; text-align: center; padding-top: 50px; }
+        body { font-family: sans-serif; background: #000; color: #fff; text-align: center; padding: 50px 20px; }
         /* 按钮通用样式 */
         .btn { 
             display: block; 
@@ -24,13 +34,13 @@
         }
         .btn:active { transform: scale(0.95); }
         
-        /* 网页版按钮 - 深蓝色 */
-        .btn-web { background: #0056b3; color: #fff; }
-        
-        /* TG按钮 - 亮蓝色 */
-        .btn-tg { background: #0088cc; color: #fff; }
+        /* 各按钮颜色设置 */
+        .btn-web { background: #0056b3; color: #fff; } /* 网页版深蓝 */
+        .btn-tg { background: #0088cc; color: #fff; }  /* TG亮蓝 */
+        .btn-x { background: #fff; color: #000; }      /* X分享白色 */
         
         .footer { margin-top: 50px; color: #444; font-size: 12px; }
+        .seo-text { margin-top: 100px; color: #222; font-size: 14px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -43,16 +53,37 @@
     
     <!-- 核心按钮 2：TG引流 -->
     <a href="https://t.me/guochan111_bot" class="btn btn-tg">📱 完整版 TG 自助进群</a>
+
+    <!-- 核心按钮 3：一键分享到 X -->
+    <a href="javascript:void(0)" onclick="shareToX()" class="btn btn-x">𝕏 分享到推特获取更新</a>
     
     <div class="footer">
         <p>如果网页版加载缓慢，请点击上方按钮通过 TG 机器人进群获取资源。<br>
         永久关键词：回忆里是我的那个黑料已打烊 四爱版</p>
-    </div><!-- 在 </body> 之前增加这段内容 -->
-<div style="margin-top: 100px; color: #222; font-size: 14px; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <h3>关于《回忆里是我的那个黑料已打烊》四爱资源说明</h3>
-    <p>很多同好在寻找“黑料已打烊”的四爱(4i)版本或GB(女攻男受)视角内容。由于原系列资源分散，本站特意建立了这个导航节点。</p>
-    <p>我们收集了包括回忆里是我的那个系列在内的多部亚文化精品。所有资源均支持在线点播。如果遇到网站卡顿或域名失效，请务必保存我们的 TG 进群通道。</p>
-    <p>关键词关键词：黑料已打烊、四爱版、GB视频、女攻男受、4i资源库、黑料完整版。</p>
-</div>
+    </div>
+
+    <!-- SEO 权重文本 -->
+    <div class="seo-text">
+        <h3>关于《回忆里是我的那个黑料已打烊》四爱资源说明</h3>
+        <p>很多同好在寻找“黑料已打烊”的四爱(4i)版本或GB(女攻男受)视角内容。由于原系列资源分散，本站特意建立了这个导航节点。</p>
+        <p>我们收集了包括回忆里是我的那个系列在内的多部亚文化精品。所有资源均支持在线点播。如果遇到网站卡顿或域名失效，请务必保存我们的 TG 进群通道。</p>
+        <p>关键词关键词：黑料已打烊、四爱版、GB视频、女攻男受、4i资源库、黑料完整版。</p>
+    </div>
+
+    <!-- 分享脚本逻辑 -->
+    <script>
+        function shareToX() {
+            // 这里定义推文的内容
+            const shareText = "发现一个超猛的 #黑料已打烊 四爱版资源站！1080P已更新。更多 #回忆里是我的那个 系列看这里 👇";
+            // 你的 GitHub Pages 链接
+            const shareUrl = "https://q6285917.github.io/heiliao-4i-sidai/";
+            
+            // 构建 X 的分享链接
+            const xIntentUrl = `https://x.com/intent/post?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(shareUrl)}`;
+            
+            // 弹出分享窗口
+            window.open(xIntentUrl, '_blank', 'width=600,height=400');
+        }
+    </script>
 </body>
 </html>
