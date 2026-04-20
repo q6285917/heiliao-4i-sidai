@@ -20,11 +20,11 @@
     <style>
         body { font-family: -apple-system, sans-serif; background: #000; color: #fff; text-align: center; padding: 40px 20px; }
         
-        /* 核心跳动动画 */
+        /* 核心跳动动画：两个按钮共用，提升点击欲 */
         @keyframes pulse {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(36, 161, 222, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(36, 161, 222, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(36, 161, 222, 0); }
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.6); }
+            70% { transform: scale(1.03); box-shadow: 0 0 0 12px rgba(59, 130, 246, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
         }
 
         .btn { 
@@ -38,17 +38,27 @@
             font-size: 1.2rem;
             position: relative;
             transition: all 0.2s;
+            box-sizing: border-box;
         }
 
         .btn:active { transform: scale(0.95); }
 
-        /* 重点：TG 进群按钮 - 已替换为邀请链接，无BOT */
+        /* 重点 1：网页版按钮 - 提升到最上方，加入动画 */
+        .btn-web { 
+            background: #2563eb; 
+            color: #fff; 
+            border: 2px solid #fff;
+            animation: pulse 2s infinite; 
+        }
+
+        /* 重点 2：TG 进群按钮 - 同样醒目，加入动画 */
         .btn-group { 
             background: #24A1DE; 
             color: #fff; 
-            animation: pulse 2s infinite;
             border: 2px solid #fff;
+            animation: pulse 2s infinite 0.5s; /* 错开 0.5 秒动画，形成节奏感 */
         }
+
         .badge {
             position: absolute;
             top: -12px;
@@ -61,10 +71,7 @@
             font-weight: bold;
         }
 
-        /* 备用网页版按钮 */
-        .btn-web { background: #1e293b; color: #94a3b8; border: 1px solid #334155; font-size: 1rem; margin-top: 30px; }
-        
-        /* X 分享按钮 */
+        /* X 分享按钮 - 保持简洁 */
         .btn-x { background: #fff; color: #000; font-size: 0.9rem; width: 220px; padding: 12px; margin-top: 40px; }
 
         .footer { margin-top: 50px; color: #444; font-size: 12px; line-height: 1.8; }
@@ -75,14 +82,17 @@
     <h1 style="color: #3b82f6; font-style: italic;">黑料已打烊<span style="color:#fff; font-style:normal; margin-left:5px;">四爱版</span></h1>
     <p style="color:#666;">回忆里是我的那个 · 官方资源导航</p>
     
-    <!-- === 唯一 TG 链接：直接导向邀请群 === -->
-    <a href="https://t.me/+URoRaNbOg0tjMjI1" class="btn btn-group">
-        <span class="badge">进群防走丢</span>
-        📱 点击加入官方交流群 (完整版)
+    <!-- === 核心按钮 1：网页版预览 === -->
+    <a href="https://v.gofarme66.ccwu.cc/" class="btn btn-web">
+        <span class="badge">快速预览</span>
+        🌐 网页在线点播版
     </a>
 
-    <!-- 备用链接：网页版 -->
-    <a href="https://v.gofarme66.ccwu.cc/" class="btn btn-web">🌐 网页在线点播版 (备用)</a>
+    <!-- === 核心按钮 2：TG 交流群 === -->
+    <a href="https://t.me/+URoRaNbOg0tjMjI1" class="btn btn-group">
+        <span class="badge">进群防走丢</span>
+        📱 永不失联TG群
+    </a>
 
     <!-- 分享到 X -->
     <a href="javascript:void(0)" onclick="shareToX()" class="btn btn-x">𝕏 分享获取更新</a>
@@ -92,7 +102,7 @@
         永久关键词：回忆里是我的那个黑料已打烊 四爱版</p>
     </div>
 
-    <!-- SEO 权重文本（给爬虫看，隐藏在黑色背景下） -->
+    <!-- SEO 权重文本 -->
     <div class="seo-text">
         <h3>关于《回忆里是我的那个黑料已打烊》四爱资源说明</h3>
         <p>很多同好在寻找“黑料已打烊”的四爱(4i)版本或GB(女攻男受)视角内容。由于原系列资源分散，本站特意建立了这个导航节点。我们收集了包括回忆里是我的那个系列在内的多部亚文化精品。所有资源均支持在线点播。如果遇到网站卡顿、Tunnel 隧道不稳定或域名失效，请务必关注我们的交流群。关键词：黑料已打烊、四爱版资源、GB视频在线、女攻男受、4i资源库、黑料已打烊完整版、回忆里是我的那个在线阅读。</p>
