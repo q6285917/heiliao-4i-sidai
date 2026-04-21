@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- GitHub 中转页主地址 -->
+  <url>
+    <loc>https://q6285917.github.io/</loc>
+    <lastmod>2024-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 如果你 GitHub 上还有其他页面（比如之前的 heiliao-4i-sidai 文件夹），可以加在下面 -->
+  <!-- 如果没有其他页面，下面这一段可以删掉 -->
+  <url>
+    <loc>https://q6285917.github.io/heiliao-4i-sidai/</loc>
+    <lastmod>2024-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
